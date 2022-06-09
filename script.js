@@ -28,7 +28,8 @@ document.querySelector('.check').addEventListener('click', function () {
     displayMessage('Correct Number🎊🎉');
     displayNumber(secretNumber);
     displayBody('#60b347');
-    displayNumber((style.width = '30rem'));
+    document.querySelector('.number').style.width = '30rem';
+    // displayNumber((style.width = '30rem'));
 
     if (score > highscore) {
       highscore = score;
